@@ -9,4 +9,24 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 
+  <security-role>
+    <role-name>role1</role-name>
+  </security-role>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>SecureResources</web-resource-name>
+      <url-pattern>/secure/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>role1</role-name>
+    </auth-constraint>
+    <user-data-constraint>
+      <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
 </web-app>

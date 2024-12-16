@@ -1,6 +1,6 @@
 # helloworldjspsecure
 
-`helloworldjspsecure` is a [JavaServer Pages](https://openliberty.io/docs/latest/reference/feature/jsp-2.3.html) application.
+`helloworldjspsecure` is a [JavaServer Pages](https://openliberty.io/docs/latest/reference/feature/jsp-2.3.html) application with example security configuration.
 
 ## Download or Run
 
