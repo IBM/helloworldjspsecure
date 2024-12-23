@@ -11,6 +11,8 @@ This application requires at least the following features to be installed:
 ```
   <featureManager>
     <feature>jsp-2.3</feature>
+    <feature>transportSecurity-1.0</feature>
+    <feature>appSecurity-3.0</feature>
   <featureManager>
 ```
 
