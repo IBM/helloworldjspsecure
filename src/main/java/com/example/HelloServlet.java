@@ -29,6 +29,8 @@ public class HelloServlet extends HttpServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/plain");
-        response.getWriter().append("Hello World Servlet @ " + String.format("%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS.%1$tL", new java.util.Date()) + "\n");
+        String str = "Hello World Servlet @ " + String.format("%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS.%1$tL", new java.util.Date());
+        System.out.println(str);
+        response.getWriter().append(str + "\n");
     }
 }
